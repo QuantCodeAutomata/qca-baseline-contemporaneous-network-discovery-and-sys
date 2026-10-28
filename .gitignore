@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+.Python
+.env
+.venv
+venv/
+env/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Raw downloaded price data must NOT be committed
+data/aligned_prices.parquet
+data/raw_prices_*.parquet
+data/*.pkl
+
+# But derived computed outputs (Z_baseline, B0, etc.) are deliverables
+# results/ outputs are always committed
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Results images are committed (generated deliverables)
+# results/ CSV and PNG files ARE committed as deliverables

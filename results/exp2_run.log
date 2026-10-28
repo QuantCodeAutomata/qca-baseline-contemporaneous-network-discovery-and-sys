@@ -1,0 +1,64 @@
+nohup: ignoring input
+2026-10-28 07:26:18,443 [INFO] Loading prices from cache: /workspace/project/data/aligned_prices.parquet
+2026-10-28 07:31:13,345 [INFO] Testing 1128 pairs on shocks (1989, 48)
+[DATA] Aligned price rows: 2204 (target: 2205)
+[DATA] Raw return intervals: 2203 (target: 2204)
+[DATA] Pre-2016 intervals removed: 24 (target: 24)
+[DATA] Post-2015 intervals removed by calendar screen: 190 (target: 190)
+[DATA] Baseline observations retained: 1989 (target: 1990)
+[DATA] Baseline date range: 2016-01-05 to 2025-06-26
+
+=== EXP 2: HSIC Independence Support ===
+
+[EXP2] Building filtered (GARCH) input...
+[EXP2] Building unfiltered input...
+
+[EXP2] Estimating DirectLiNGAM on filtered input ...
+  Recovered shocks shape: (1989, 48)
+
+[EXP2] Running HSIC tests for filtered (48 vars) ...
+  NOTE: 1326 pairs × 1951 shifts = computationally intensive
+  Running with exact circular shifts (min distance=20) ...
+2026-10-28 07:44:48,029 [INFO] Testing 1128 pairs on shocks (1989, 48)
+[HSIC] Tested pairs: 1128
+[HSIC] Unadjusted p<0.05 rejections: 196 (filtered target ~219, unfiltered ~276)
+[HSIC] BH rejections: 15 (filtered target ~14)
+[HSIC] BY rejections: 0 (filtered target ~0)
+
+  [FILTERED] HSIC summary:
+    Tested pairs:               1128
+    Unadjusted p<0.05:          196  (target filtered: ~219, unfiltered: N/A)
+    BH rejections (q=0.05):     15  (target filtered: ~14)
+    BY rejections (q=0.05):     0  (target filtered: ~0)
+    Mean squared shock corr:    0.0212  (target filtered: ~0.020)
+    BH independence support:    FAIL
+    (Filtered baseline expected to FAIL per paper)
+
+[EXP2] Estimating DirectLiNGAM on unfiltered input ...
+  Recovered shocks shape: (1989, 48)
+
+[EXP2] Running HSIC tests for unfiltered (48 vars) ...
+  NOTE: 1326 pairs × 1951 shifts = computationally intensive
+  Running with exact circular shifts (min distance=20) ...
+[HSIC] Tested pairs: 1128
+[HSIC] Unadjusted p<0.05 rejections: 465 (filtered target ~219, unfiltered ~276)
+[HSIC] BH rejections: 272 (filtered target ~14)
+[HSIC] BY rejections: 0 (filtered target ~0)
+
+  [UNFILTERED] HSIC summary:
+    Tested pairs:               1128
+    Unadjusted p<0.05:          465  (target filtered: ~219, unfiltered: N/A)
+    BH rejections (q=0.05):     272  (target filtered: ~14)
+    BY rejections (q=0.05):     0  (target filtered: ~0)
+    Mean squared shock corr:    0.0470  (target filtered: ~0.020)
+    BH independence support:    FAIL
+    (Filtered baseline expected to FAIL per paper)
+
+=== EXP 2: Filtered vs Unfiltered Comparison ===
+  BH rejections:  filtered=15  vs  unfiltered=272  (target: 14 vs 276)
+  Mean sq corr:   filtered=0.0212  vs  unfiltered=0.0470  (target: 0.020 vs 0.045)
+  Filtering reduces dependence: True  (expected: True)
+[OUTPUT] HSIC p-value plot saved to results/exp2_hsic_pvalues.png
+[OUTPUT] Metadata saved to results/exp2_metadata.json
+
+=== EXP 2 COMPLETE ===

@@ -1,0 +1,749 @@
+2026-10-28 08:16:53,237 [INFO] Loading prices from cache: /workspace/project/data/aligned_prices.parquet
+[Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+[DATA] Aligned price rows: 2204 (target: 2205)
+[DATA] Raw return intervals: 2203 (target: 2204)
+[DATA] Pre-2016 intervals removed: 24 (target: 24)
+[DATA] Post-2015 intervals removed by calendar screen: 190 (target: 190)
+[DATA] Baseline observations retained: 1989 (target: 1990)
+[DATA] Baseline date range: 2016-01-05 to 2025-06-26
+
+=== EXP 3: Re-Discovery Bootstrap ===
+  N_outer=100, N_inner=100, block_length=10
+
+[EXP3] Estimating full-sample baseline for reference...
+
+[EXP3] Running 100 outer replications (n_jobs=8)...
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+[Parallel(n_jobs=8)]: Done   2 tasks      | elapsed:  1.3min
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+[Parallel(n_jobs=8)]: Done  56 tasks      | elapsed:  8.9min
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+[Parallel(n_jobs=8)]: Done 100 out of 100 | elapsed: 15.2min finished
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+
+[EXP3] Completed 100/100 replications (0 singular)
+
+[EXP3] Network uncertainty summary:
+  Active pairs (>= 10%):     595  (target: ~624)
+  Ambiguous pairs:           96  (target: ~111)
+  Ambiguous share:           0.161  (target: ~0.178)
+  Strict backbone edges:     43  (target: ~32)
+    Bank-to-bank:            24  (target: ~19)
+    Market-originating:      19  (target: ~13)
+
+[EXP3] Rank reproducibility analysis...
+
+  SIS rank correlation (baseline vs bootstrap):
+    Median: 0.473  (target: ~0.50)
+    5th pct: 0.243  (target: ~0.31)
+  SVS rank correlation (baseline vs bootstrap):
+    Median: 0.694  (target: ~0.72)
+    5th pct: 0.524  (target: ~0.58)
+
+  SVS more reproducible than SIS: True  (expected: True)
+
+  Top-5 SIS inclusion frequencies: [('CABK.MC', 0.65), ('ISP.MI', 0.6), ('BKT.MC', 0.47), ('BNP.PA', 0.44), ('MB.MI', 0.42)]
+  Top-5 SVS inclusion frequencies: [('GLE.PA', 0.77), ('ACA.PA', 0.71), ('BPE.MI', 0.49), ('BAMI.MI', 0.45), ('SAB.MC', 0.43)]
+[OUTPUT] Rank stability plot saved to results/exp3_rank_stability.png
+[OUTPUT] Edge frequency matrix saved to results/exp3_edge_frequency_matrix.png
+[OUTPUT] Metadata saved to results/exp3_metadata.json
+
+=== EXP 3 COMPLETE ===
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 400 (target ~332)
+[SELECTION] BH-selected: 302 (target ~219)
+[SELECTION] BH+materiality retained: 286 (target ~214)
+[SELECTION] BY+materiality retained: 199 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 392 (target ~332)
+[SELECTION] BH-selected: 291 (target ~219)
+[SELECTION] BH+materiality retained: 271 (target ~214)
+[SELECTION] BY+materiality retained: 186 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 386 (target ~332)
+[SELECTION] BH-selected: 317 (target ~219)
+[SELECTION] BH+materiality retained: 291 (target ~214)
+[SELECTION] BY+materiality retained: 184 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 398 (target ~332)
+[SELECTION] BH-selected: 276 (target ~219)
+[SELECTION] BH+materiality retained: 259 (target ~214)
+[SELECTION] BY+materiality retained: 186 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 397 (target ~332)
+[SELECTION] BH-selected: 266 (target ~219)
+[SELECTION] BH+materiality retained: 253 (target ~214)
+[SELECTION] BY+materiality retained: 164 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 414 (target ~332)
+[SELECTION] BH-selected: 284 (target ~219)
+[SELECTION] BH+materiality retained: 263 (target ~214)
+[SELECTION] BY+materiality retained: 179 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 417 (target ~332)
+[SELECTION] BH-selected: 326 (target ~219)
+[SELECTION] BH+materiality retained: 302 (target ~214)
+[SELECTION] BY+materiality retained: 200 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 390 (target ~332)
+[SELECTION] BH-selected: 281 (target ~219)
+[SELECTION] BH+materiality retained: 259 (target ~214)
+[SELECTION] BY+materiality retained: 172 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 427 (target ~332)
+[SELECTION] BH-selected: 323 (target ~219)
+[SELECTION] BH+materiality retained: 300 (target ~214)
+[SELECTION] BY+materiality retained: 201 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 386 (target ~332)
+[SELECTION] BH-selected: 264 (target ~219)
+[SELECTION] BH+materiality retained: 251 (target ~214)
+[SELECTION] BY+materiality retained: 171 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 367 (target ~332)
+[SELECTION] BH-selected: 268 (target ~219)
+[SELECTION] BH+materiality retained: 258 (target ~214)
+[SELECTION] BY+materiality retained: 173 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 399 (target ~332)
+[SELECTION] BH-selected: 305 (target ~219)
+[SELECTION] BH+materiality retained: 286 (target ~214)
+[SELECTION] BY+materiality retained: 194 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 395 (target ~332)
+[SELECTION] BH-selected: 283 (target ~219)
+[SELECTION] BH+materiality retained: 265 (target ~214)
+[SELECTION] BY+materiality retained: 174 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 407 (target ~332)
+[SELECTION] BH-selected: 291 (target ~219)
+[SELECTION] BH+materiality retained: 268 (target ~214)
+[SELECTION] BY+materiality retained: 162 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 386 (target ~332)
+[SELECTION] BH-selected: 267 (target ~219)
+[SELECTION] BH+materiality retained: 251 (target ~214)
+[SELECTION] BY+materiality retained: 169 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 398 (target ~332)
+[SELECTION] BH-selected: 292 (target ~219)
+[SELECTION] BH+materiality retained: 271 (target ~214)
+[SELECTION] BY+materiality retained: 183 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 395 (target ~332)
+[SELECTION] BH-selected: 304 (target ~219)
+[SELECTION] BH+materiality retained: 283 (target ~214)
+[SELECTION] BY+materiality retained: 194 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 397 (target ~332)
+[SELECTION] BH-selected: 270 (target ~219)
+[SELECTION] BH+materiality retained: 258 (target ~214)
+[SELECTION] BY+materiality retained: 179 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 380 (target ~332)
+[SELECTION] BH-selected: 277 (target ~219)
+[SELECTION] BH+materiality retained: 262 (target ~214)
+[SELECTION] BY+materiality retained: 202 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 410 (target ~332)
+[SELECTION] BH-selected: 299 (target ~219)
+[SELECTION] BH+materiality retained: 276 (target ~214)
+[SELECTION] BY+materiality retained: 188 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 401 (target ~332)
+[SELECTION] BH-selected: 296 (target ~219)
+[SELECTION] BH+materiality retained: 271 (target ~214)
+[SELECTION] BY+materiality retained: 187 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 388 (target ~332)
+[SELECTION] BH-selected: 291 (target ~219)
+[SELECTION] BH+materiality retained: 260 (target ~214)
+[SELECTION] BY+materiality retained: 186 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 387 (target ~332)
+[SELECTION] BH-selected: 272 (target ~219)
+[SELECTION] BH+materiality retained: 256 (target ~214)
+[SELECTION] BY+materiality retained: 178 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 424 (target ~332)
+[SELECTION] BH-selected: 313 (target ~219)
+[SELECTION] BH+materiality retained: 283 (target ~214)
+[SELECTION] BY+materiality retained: 187 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 413 (target ~332)
+[SELECTION] BH-selected: 289 (target ~219)
+[SELECTION] BH+materiality retained: 264 (target ~214)
+[SELECTION] BY+materiality retained: 187 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 408 (target ~332)
+[SELECTION] BH-selected: 300 (target ~219)
+[SELECTION] BH+materiality retained: 281 (target ~214)
+[SELECTION] BY+materiality retained: 191 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 413 (target ~332)
+[SELECTION] BH-selected: 291 (target ~219)
+[SELECTION] BH+materiality retained: 259 (target ~214)
+[SELECTION] BY+materiality retained: 180 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 387 (target ~332)
+[SELECTION] BH-selected: 290 (target ~219)
+[SELECTION] BH+materiality retained: 269 (target ~214)
+[SELECTION] BY+materiality retained: 177 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 380 (target ~332)
+[SELECTION] BH-selected: 267 (target ~219)
+[SELECTION] BH+materiality retained: 241 (target ~214)
+[SELECTION] BY+materiality retained: 172 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 395 (target ~332)
+[SELECTION] BH-selected: 283 (target ~219)
+[SELECTION] BH+materiality retained: 267 (target ~214)
+[SELECTION] BY+materiality retained: 180 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 409 (target ~332)
+[SELECTION] BH-selected: 292 (target ~219)
+[SELECTION] BH+materiality retained: 274 (target ~214)
+[SELECTION] BY+materiality retained: 196 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 396 (target ~332)
+[SELECTION] BH-selected: 281 (target ~219)
+[SELECTION] BH+materiality retained: 272 (target ~214)
+[SELECTION] BY+materiality retained: 190 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 352 (target ~332)
+[SELECTION] BH-selected: 234 (target ~219)
+[SELECTION] BH+materiality retained: 223 (target ~214)
+[SELECTION] BY+materiality retained: 156 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 380 (target ~332)
+[SELECTION] BH-selected: 271 (target ~219)
+[SELECTION] BH+materiality retained: 252 (target ~214)
+[SELECTION] BY+materiality retained: 199 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 388 (target ~332)
+[SELECTION] BH-selected: 288 (target ~219)
+[SELECTION] BH+materiality retained: 272 (target ~214)
+[SELECTION] BY+materiality retained: 193 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 392 (target ~332)
+[SELECTION] BH-selected: 268 (target ~219)
+[SELECTION] BH+materiality retained: 246 (target ~214)
+[SELECTION] BY+materiality retained: 182 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 394 (target ~332)
+[SELECTION] BH-selected: 307 (target ~219)
+[SELECTION] BH+materiality retained: 274 (target ~214)
+[SELECTION] BY+materiality retained: 198 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 398 (target ~332)
+[SELECTION] BH-selected: 278 (target ~219)
+[SELECTION] BH+materiality retained: 265 (target ~214)
+[SELECTION] BY+materiality retained: 190 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 414 (target ~332)
+[SELECTION] BH-selected: 295 (target ~219)
+[SELECTION] BH+materiality retained: 275 (target ~214)
+[SELECTION] BY+materiality retained: 185 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 364 (target ~332)
+[SELECTION] BH-selected: 255 (target ~219)
+[SELECTION] BH+materiality retained: 242 (target ~214)
+[SELECTION] BY+materiality retained: 180 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 384 (target ~332)
+[SELECTION] BH-selected: 253 (target ~219)
+[SELECTION] BH+materiality retained: 247 (target ~214)
+[SELECTION] BY+materiality retained: 160 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 378 (target ~332)
+[SELECTION] BH-selected: 278 (target ~219)
+[SELECTION] BH+materiality retained: 255 (target ~214)
+[SELECTION] BY+materiality retained: 177 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 396 (target ~332)
+[SELECTION] BH-selected: 280 (target ~219)
+[SELECTION] BH+materiality retained: 262 (target ~214)
+[SELECTION] BY+materiality retained: 178 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 397 (target ~332)
+[SELECTION] BH-selected: 273 (target ~219)
+[SELECTION] BH+materiality retained: 252 (target ~214)
+[SELECTION] BY+materiality retained: 177 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 382 (target ~332)
+[SELECTION] BH-selected: 273 (target ~219)
+[SELECTION] BH+materiality retained: 260 (target ~214)
+[SELECTION] BY+materiality retained: 177 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 404 (target ~332)
+[SELECTION] BH-selected: 292 (target ~219)
+[SELECTION] BH+materiality retained: 271 (target ~214)
+[SELECTION] BY+materiality retained: 195 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 375 (target ~332)
+[SELECTION] BH-selected: 272 (target ~219)
+[SELECTION] BH+materiality retained: 251 (target ~214)
+[SELECTION] BY+materiality retained: 179 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 405 (target ~332)
+[SELECTION] BH-selected: 299 (target ~219)
+[SELECTION] BH+materiality retained: 271 (target ~214)
+[SELECTION] BY+materiality retained: 191 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 393 (target ~332)
+[SELECTION] BH-selected: 288 (target ~219)
+[SELECTION] BH+materiality retained: 256 (target ~214)
+[SELECTION] BY+materiality retained: 186 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 373 (target ~332)
+[SELECTION] BH-selected: 277 (target ~219)
+[SELECTION] BH+materiality retained: 257 (target ~214)
+[SELECTION] BY+materiality retained: 186 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 358 (target ~332)
+[SELECTION] BH-selected: 253 (target ~219)
+[SELECTION] BH+materiality retained: 237 (target ~214)
+[SELECTION] BY+materiality retained: 160 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 426 (target ~332)
+[SELECTION] BH-selected: 323 (target ~219)
+[SELECTION] BH+materiality retained: 304 (target ~214)
+[SELECTION] BY+materiality retained: 224 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 393 (target ~332)
+[SELECTION] BH-selected: 302 (target ~219)
+[SELECTION] BH+materiality retained: 279 (target ~214)
+[SELECTION] BY+materiality retained: 195 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 358 (target ~332)
+[SELECTION] BH-selected: 235 (target ~219)
+[SELECTION] BH+materiality retained: 226 (target ~214)
+[SELECTION] BY+materiality retained: 173 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 381 (target ~332)
+[SELECTION] BH-selected: 276 (target ~219)
+[SELECTION] BH+materiality retained: 263 (target ~214)
+[SELECTION] BY+materiality retained: 184 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 384 (target ~332)
+[SELECTION] BH-selected: 281 (target ~219)
+[SELECTION] BH+materiality retained: 264 (target ~214)
+[SELECTION] BY+materiality retained: 190 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 399 (target ~332)
+[SELECTION] BH-selected: 288 (target ~219)
+[SELECTION] BH+materiality retained: 277 (target ~214)
+[SELECTION] BY+materiality retained: 185 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 395 (target ~332)
+[SELECTION] BH-selected: 293 (target ~219)
+[SELECTION] BH+materiality retained: 272 (target ~214)
+[SELECTION] BY+materiality retained: 179 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 368 (target ~332)
+[SELECTION] BH-selected: 263 (target ~219)
+[SELECTION] BH+materiality retained: 250 (target ~214)
+[SELECTION] BY+materiality retained: 163 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 374 (target ~332)
+[SELECTION] BH-selected: 267 (target ~219)
+[SELECTION] BH+materiality retained: 251 (target ~214)
+[SELECTION] BY+materiality retained: 169 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 383 (target ~332)
+[SELECTION] BH-selected: 264 (target ~219)
+[SELECTION] BH+materiality retained: 246 (target ~214)
+[SELECTION] BY+materiality retained: 178 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 395 (target ~332)
+[SELECTION] BH-selected: 300 (target ~219)
+[SELECTION] BH+materiality retained: 278 (target ~214)
+[SELECTION] BY+materiality retained: 182 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 418 (target ~332)
+[SELECTION] BH-selected: 316 (target ~219)
+[SELECTION] BH+materiality retained: 289 (target ~214)
+[SELECTION] BY+materiality retained: 204 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 397 (target ~332)
+[SELECTION] BH-selected: 292 (target ~219)
+[SELECTION] BH+materiality retained: 264 (target ~214)
+[SELECTION] BY+materiality retained: 194 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 410 (target ~332)
+[SELECTION] BH-selected: 295 (target ~219)
+[SELECTION] BH+materiality retained: 276 (target ~214)
+[SELECTION] BY+materiality retained: 181 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 355 (target ~332)
+[SELECTION] BH-selected: 277 (target ~219)
+[SELECTION] BH+materiality retained: 261 (target ~214)
+[SELECTION] BY+materiality retained: 184 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 395 (target ~332)
+[SELECTION] BH-selected: 278 (target ~219)
+[SELECTION] BH+materiality retained: 264 (target ~214)
+[SELECTION] BY+materiality retained: 179 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 410 (target ~332)
+[SELECTION] BH-selected: 312 (target ~219)
+[SELECTION] BH+materiality retained: 292 (target ~214)
+[SELECTION] BY+materiality retained: 201 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 385 (target ~332)
+[SELECTION] BH-selected: 285 (target ~219)
+[SELECTION] BH+materiality retained: 268 (target ~214)
+[SELECTION] BY+materiality retained: 177 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 416 (target ~332)
+[SELECTION] BH-selected: 301 (target ~219)
+[SELECTION] BH+materiality retained: 275 (target ~214)
+[SELECTION] BY+materiality retained: 198 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 404 (target ~332)
+[SELECTION] BH-selected: 285 (target ~219)
+[SELECTION] BH+materiality retained: 271 (target ~214)
+[SELECTION] BY+materiality retained: 198 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 407 (target ~332)
+[SELECTION] BH-selected: 294 (target ~219)
+[SELECTION] BH+materiality retained: 275 (target ~214)
+[SELECTION] BY+materiality retained: 178 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 414 (target ~332)
+[SELECTION] BH-selected: 297 (target ~219)
+[SELECTION] BH+materiality retained: 277 (target ~214)
+[SELECTION] BY+materiality retained: 194 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 378 (target ~332)
+[SELECTION] BH-selected: 266 (target ~219)
+[SELECTION] BH+materiality retained: 259 (target ~214)
+[SELECTION] BY+materiality retained: 185 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 382 (target ~332)
+[SELECTION] BH-selected: 282 (target ~219)
+[SELECTION] BH+materiality retained: 260 (target ~214)
+[SELECTION] BY+materiality retained: 185 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 402 (target ~332)
+[SELECTION] BH-selected: 299 (target ~219)
+[SELECTION] BH+materiality retained: 280 (target ~214)
+[SELECTION] BY+materiality retained: 182 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 396 (target ~332)
+[SELECTION] BH-selected: 278 (target ~219)
+[SELECTION] BH+materiality retained: 260 (target ~214)
+[SELECTION] BY+materiality retained: 181 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 431 (target ~332)
+[SELECTION] BH-selected: 325 (target ~219)
+[SELECTION] BH+materiality retained: 301 (target ~214)
+[SELECTION] BY+materiality retained: 201 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 418 (target ~332)
+[SELECTION] BH-selected: 294 (target ~219)
+[SELECTION] BH+materiality retained: 274 (target ~214)
+[SELECTION] BY+materiality retained: 180 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 400 (target ~332)
+[SELECTION] BH-selected: 302 (target ~219)
+[SELECTION] BH+materiality retained: 283 (target ~214)
+[SELECTION] BY+materiality retained: 199 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 420 (target ~332)
+[SELECTION] BH-selected: 309 (target ~219)
+[SELECTION] BH+materiality retained: 282 (target ~214)
+[SELECTION] BY+materiality retained: 195 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 375 (target ~332)
+[SELECTION] BH-selected: 278 (target ~219)
+[SELECTION] BH+materiality retained: 258 (target ~214)
+[SELECTION] BY+materiality retained: 174 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 386 (target ~332)
+[SELECTION] BH-selected: 280 (target ~219)
+[SELECTION] BH+materiality retained: 262 (target ~214)
+[SELECTION] BY+materiality retained: 180 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 407 (target ~332)
+[SELECTION] BH-selected: 324 (target ~219)
+[SELECTION] BH+materiality retained: 291 (target ~214)
+[SELECTION] BY+materiality retained: 186 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 385 (target ~332)
+[SELECTION] BH-selected: 282 (target ~219)
+[SELECTION] BH+materiality retained: 266 (target ~214)
+[SELECTION] BY+materiality retained: 157 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 391 (target ~332)
+[SELECTION] BH-selected: 271 (target ~219)
+[SELECTION] BH+materiality retained: 256 (target ~214)
+[SELECTION] BY+materiality retained: 174 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 400 (target ~332)
+[SELECTION] BH-selected: 279 (target ~219)
+[SELECTION] BH+materiality retained: 262 (target ~214)
+[SELECTION] BY+materiality retained: 190 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 393 (target ~332)
+[SELECTION] BH-selected: 264 (target ~219)
+[SELECTION] BH+materiality retained: 251 (target ~214)
+[SELECTION] BY+materiality retained: 165 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 399 (target ~332)
+[SELECTION] BH-selected: 311 (target ~219)
+[SELECTION] BH+materiality retained: 287 (target ~214)
+[SELECTION] BY+materiality retained: 190 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 376 (target ~332)
+[SELECTION] BH-selected: 266 (target ~219)
+[SELECTION] BH+materiality retained: 243 (target ~214)
+[SELECTION] BY+materiality retained: 160 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 395 (target ~332)
+[SELECTION] BH-selected: 307 (target ~219)
+[SELECTION] BH+materiality retained: 291 (target ~214)
+[SELECTION] BY+materiality retained: 200 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 386 (target ~332)
+[SELECTION] BH-selected: 291 (target ~219)
+[SELECTION] BH+materiality retained: 267 (target ~214)
+[SELECTION] BY+materiality retained: 185 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 406 (target ~332)
+[SELECTION] BH-selected: 305 (target ~219)
+[SELECTION] BH+materiality retained: 281 (target ~214)
+[SELECTION] BY+materiality retained: 195 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 393 (target ~332)
+[SELECTION] BH-selected: 283 (target ~219)
+[SELECTION] BH+materiality retained: 268 (target ~214)
+[SELECTION] BY+materiality retained: 182 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 419 (target ~332)
+[SELECTION] BH-selected: 300 (target ~219)
+[SELECTION] BH+materiality retained: 275 (target ~214)
+[SELECTION] BY+materiality retained: 185 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 390 (target ~332)
+[SELECTION] BH-selected: 272 (target ~219)
+[SELECTION] BH+materiality retained: 251 (target ~214)
+[SELECTION] BY+materiality retained: 174 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 393 (target ~332)
+[SELECTION] BH-selected: 259 (target ~219)
+[SELECTION] BH+materiality retained: 243 (target ~214)
+[SELECTION] BY+materiality retained: 163 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 372 (target ~332)
+[SELECTION] BH-selected: 263 (target ~219)
+[SELECTION] BH+materiality retained: 244 (target ~214)
+[SELECTION] BY+materiality retained: 159 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 411 (target ~332)
+[SELECTION] BH-selected: 311 (target ~219)
+[SELECTION] BH+materiality retained: 289 (target ~214)
+[SELECTION] BY+materiality retained: 200 (target ~169)
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 403 (target ~332)
+[SELECTION] BH-selected: 288 (target ~219)
+[SELECTION] BH+materiality retained: 267 (target ~214)
+[SELECTION] BY+materiality retained: 184 (target ~169)

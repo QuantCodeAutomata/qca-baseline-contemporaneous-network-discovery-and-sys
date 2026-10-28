@@ -1,0 +1,52 @@
+nohup: ignoring input
+2026-10-28 07:09:11,347 [INFO] Loading prices from cache: /workspace/project/data/aligned_prices.parquet
+[DATA] Aligned price rows: 2204 (target: 2205)
+[DATA] Raw return intervals: 2203 (target: 2204)
+[DATA] Pre-2016 intervals removed: 24 (target: 24)
+[DATA] Post-2015 intervals removed by calendar screen: 190 (target: 190)
+[DATA] Baseline observations retained: 1989 (target: 1990)
+[DATA] Baseline date range: 2016-01-05 to 2025-06-26
+
+=== EXP 5: Benchmark Comparison (DY, MES, Size/PC1 Controls) ===
+
+[EXP5] Loading systemic scores...
+  Loaded scores for 47 banks from exp1 output.
+  Systemic scores for 47 banks
+
+[EXP5] Computing Diebold-Yilmaz connectedness...
+
+[EXP5] Computing Marginal Expected Shortfall (MES)...
+
+[EXP5] Computing PC1 loadings...
+
+[EXP5] Computing Spearman rank correlations...
+
+  Raw Spearman correlations:
+    SIS vs DY 'to':    0.4021  (target: ~0.416)
+    SVS vs DY 'from':  0.7539  (target: ~0.721)
+    SIS vs MES:        0.1246  (target: ~0.149)
+    SVS vs MES:        0.4440  (target: ~0.449)
+
+  Size-controlled partial rank correlations:
+    SIS vs DY 'to':    0.2185  (target: ~0.302)
+    SVS vs DY 'from':  0.6885  (target: ~0.639)
+    SIS vs MES:        -0.0205  (target: ~0.040)
+    SVS vs MES:        0.3099  (target: ~0.335)
+
+  Size+PC1-controlled partial rank correlations:
+    SIS vs DY 'to':    -0.0753  (target: ~-0.006)
+    SVS vs DY 'from':  0.1095  (target: ~-0.043)
+    SIS vs MES:        -0.0868  (target: ~-0.033)
+    SVS vs MES:        0.1865  (target: ~0.252)
+
+[OUTPUT] Benchmark correlation table saved to results/exp5_benchmark_correlations.csv
+          Pair  Raw_rho  Raw_p  Size_ctrl_rho  Size_PC1_ctrl_rho
+  SIS vs DY-to   0.4021 0.0051         0.2185            -0.0753
+SVS vs DY-from   0.7539 0.0000         0.6885             0.1095
+    SIS vs MES   0.1246 0.4040        -0.0205            -0.0868
+    SVS vs MES   0.4440 0.0018         0.3099             0.1865
+[OUTPUT] Benchmark data saved to results/exp5_benchmark_data.csv
+[OUTPUT] Benchmark scatter plots saved to results/exp5_benchmark_scatters.png
+[OUTPUT] Metadata saved to results/exp5_metadata.json
+
+=== EXP 5 COMPLETE ===

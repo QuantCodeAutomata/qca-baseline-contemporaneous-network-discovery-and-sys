@@ -1,0 +1,12 @@
+module,status,n_obs,n_vars,n_order_allowed,n_descriptive,n_unadj_sig,n_bh_selected,n_bh_materiality,n_by_materiality
+BASELINE,ok,1989,48,1128,287,312,216,207,154
+A_unfiltered,ok,1989,48,1128,321,284,192,190,134
+B_incl2015_screened,ok,2011,48,1128,287,322,225,216,162
+C_nocalendar,ok,2179,48,1128,310,298,191,189,144
+D_all_unfiltered,ok,2203,48,1128,342,284,176,172,130
+E_return_screen_0.25,ok,1974,48,1128,303,334,231,226,163
+E_return_screen_0.35,ok,1983,48,1128,293,320,225,217,154
+E_return_screen_0.5,ok,1987,48,1128,304,335,226,218,165
+F_excl_bmps_tpeir,ok,1989,46,1035,285,319,219,206,159
+G_excl_lowcap,ok,1989,44,946,260,283,211,204,148
+H_var1_innovations,ok,1988,48,1128,306,308,215,213,147

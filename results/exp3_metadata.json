@@ -1,0 +1,18 @@
+{
+  "exp_id": "exp_3",
+  "n_outer": 100,
+  "n_inner": 100,
+  "n_completed": 100,
+  "n_singular": 0,
+  "n_active_pairs": 595,
+  "n_ambiguous_pairs": 96,
+  "ambiguous_share": 0.16134453781512606,
+  "n_backbone_edges": 43,
+  "n_backbone_bb": 24,
+  "n_backbone_mkt": 19,
+  "sis_median_corr": 0.4733830978372001,
+  "sis_p5_corr": 0.24345220796379294,
+  "svs_median_corr": 0.6944580963267363,
+  "svs_p5_corr": 0.5244623034227567,
+  "svs_more_stable_than_sis": true
+}

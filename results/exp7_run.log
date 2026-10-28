@@ -1,0 +1,63 @@
+nohup: ignoring input
+2026-10-28 07:09:09,136 [INFO] Loading prices from cache: /workspace/project/data/aligned_prices.parquet
+[DATA] Aligned price rows: 2204 (target: 2205)
+[DATA] Raw return intervals: 2203 (target: 2204)
+[DATA] Pre-2016 intervals removed: 24 (target: 24)
+[DATA] Post-2015 intervals removed by calendar screen: 190 (target: 190)
+[DATA] Baseline observations retained: 1989 (target: 1990)
+[DATA] Baseline date range: 2016-01-05 to 2025-06-26
+
+=== EXP 7: Recursiveness Diagnostics ===
+
+[EXP7] Recovering baseline DirectLiNGAM order...
+  Loaded causal order (first 5): [0, 1, 2, 3, 4]
+
+[EXP7] Computing sample covariance and Cholesky factor...
+  Cholesky factor shape: (48, 48)
+
+[EXP7] Running FastICA with 10 starts...
+  Converged starts: 10/10
+
+[EXP7] Aligning ICA mixing matrices to Cholesky factor...
+  Start 0: Frobenius distance = 4.6513
+  Start 1: Frobenius distance = 4.6561
+  Start 2: Frobenius distance = 4.6545
+  Start 3: Frobenius distance = 4.6479
+  Start 4: Frobenius distance = 4.6674
+  Start 5: Frobenius distance = 4.6632
+  Start 6: Frobenius distance = 4.6589
+  Start 7: Frobenius distance = 4.6631
+  Start 8: Frobenius distance = 4.6523
+  Start 9: Frobenius distance = 4.6559
+
+  Best aligned distance: 4.6479
+  Median aligned distance: 4.6560
+
+[EXP7] Building random-rotation reference (10000 draws)...
+  Fraction of rotated ICA distances >= observed:  1.0000
+  Fraction of rotated Chol distances >= observed: 1.0000
+  (Small fraction → observed distance unusually small → supports recursiveness)
+
+[EXP7] Computing Ilmonen minimum-distance index...
+  Ilmonen index: 8.6346
+
+[EXP7] Computing backward mass for baseline order...
+  Backward mass (baseline order): 0.1327
+  (Lower backward mass → more consistent with recursive order)
+
+[EXP7] Generating 5000 random-order backward mass values...
+  Fraction of random orders with BM <= baseline: 0.3496
+  Rank of baseline (fraction below):             0.3496
+  (Small fraction → baseline order unusually consistent with recursiveness)
+
+[EXP7] Simulating 20 exact acyclic reference systems...
+  Mean backward mass of 20 exact acyclic systems: 0.8669
+
+[EXP7] Across-start stability of backward mass:
+  BM values: ['0.0174', '0.0688', '0.7396', '0.1327', '0.8804', '0.9734', '0.0114', '0.0447', '0.8274', '0.9738']
+  Range: [0.0114, 0.9738]
+[OUTPUT] Backward mass plot saved to results/exp7_backward_mass.png
+[OUTPUT] Rotation reference plot saved to results/exp7_rotation_reference.png
+[OUTPUT] Metadata saved to results/exp7_metadata.json
+
+=== EXP 7 COMPLETE ===

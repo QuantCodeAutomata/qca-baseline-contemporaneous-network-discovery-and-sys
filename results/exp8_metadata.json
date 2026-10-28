@@ -1,0 +1,57 @@
+{
+  "exp_id": "exp_8",
+  "n_reps": 10,
+  "burn_in": 500,
+  "designs": [
+    "homoskedastic-laplace",
+    "homoskedastic-t",
+    "heterosk-unfiltered",
+    "heterosk-filtered"
+  ],
+  "summary": [
+    {
+      "design": "heterosk-filtered",
+      "n_reps": 10,
+      "mean_precision": 0.9802287581699346,
+      "mean_recall": 1.0,
+      "mean_f1": 0.9897647280255976,
+      "mean_orientation_acc": 1.0,
+      "mean_tp": 12.4,
+      "mean_fp": 0.3,
+      "estimator": "filtered"
+    },
+    {
+      "design": "heterosk-unfiltered",
+      "n_reps": 10,
+      "mean_precision": 0.9791035353535353,
+      "mean_recall": 1.0,
+      "mean_f1": 0.9891551459293394,
+      "mean_orientation_acc": 1.0,
+      "mean_tp": 13.8,
+      "mean_fp": 0.3,
+      "estimator": "unfiltered"
+    },
+    {
+      "design": "homoskedastic-laplace",
+      "n_reps": 10,
+      "mean_precision": 0.9923076923076923,
+      "mean_recall": 1.0,
+      "mean_f1": 0.9960000000000001,
+      "mean_orientation_acc": 1.0,
+      "mean_tp": 13.7,
+      "mean_fp": 0.1,
+      "estimator": "unfiltered"
+    },
+    {
+      "design": "homoskedastic-t",
+      "n_reps": 10,
+      "mean_precision": 0.9634480431848853,
+      "mean_recall": 0.9923076923076923,
+      "mean_f1": 0.9771411527704433,
+      "mean_orientation_acc": 1.0,
+      "mean_tp": 12.7,
+      "mean_fp": 0.5,
+      "estimator": "unfiltered"
+    }
+  ]
+}

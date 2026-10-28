@@ -1,0 +1,162 @@
+2026-10-28 08:14:05,244 [INFO] Loading prices from cache: /workspace/project/data/aligned_prices.parquet
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+[DATA] Aligned price rows: 2204 (target: 2205)
+[DATA] Raw return intervals: 2203 (target: 2204)
+[DATA] Pre-2016 intervals removed: 24 (target: 24)
+[DATA] Post-2015 intervals removed by calendar screen: 190 (target: 190)
+[DATA] Baseline observations retained: 1989 (target: 1990)
+[DATA] Baseline date range: 2016-01-05 to 2025-06-26
+
+=== EXP 6: Sensitivity and Robustness Modules ===
+
+[EXP6] Module BASELINE: GARCH-filtered screened 2016+ sample
+
+  [Module BASELINE] T=1989, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 312 (target ~332)
+[SELECTION] BH-selected: 216 (target ~219)
+[SELECTION] BH+materiality retained: 207 (target ~214)
+[SELECTION] BY+materiality retained: 154 (target ~169)
+    n_obs=1989, descriptive=287, BH+mat=207
+
+[EXP6] Module A: Unfiltered (no GARCH) same-sample returns
+
+  [Module A_unfiltered] T=1989, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 284 (target ~332)
+[SELECTION] BH-selected: 192 (target ~219)
+[SELECTION] BH+materiality retained: 190 (target ~214)
+[SELECTION] BY+materiality retained: 134 (target ~169)
+    n_obs=1989, descriptive=321, BH+mat=190
+
+[EXP6] Module B: Calendar screen including 2015 intervals
+  Module B sample size: 2011
+
+  [Module B_incl2015_screened] T=2011, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 322 (target ~332)
+[SELECTION] BH-selected: 225 (target ~219)
+[SELECTION] BH+materiality retained: 216 (target ~214)
+[SELECTION] BY+materiality retained: 162 (target ~169)
+    n_obs=2011, descriptive=287, BH+mat=216
+
+[EXP6] Module C: 2016+ without calendar screen
+
+  [Module C_nocalendar] T=2179, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 298 (target ~332)
+[SELECTION] BH-selected: 191 (target ~219)
+[SELECTION] BH+materiality retained: 189 (target ~214)
+[SELECTION] BY+materiality retained: 144 (target ~169)
+    n_obs=2179, descriptive=310, BH+mat=189
+
+[EXP6] Module D: All aligned dates, unfiltered
+
+  [Module D_all_unfiltered] T=2203, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 284 (target ~332)
+[SELECTION] BH-selected: 176 (target ~219)
+[SELECTION] BH+materiality retained: 172 (target ~214)
+[SELECTION] BY+materiality retained: 130 (target ~169)
+    n_obs=2203, descriptive=342, BH+mat=172
+
+[EXP6] Module E: Return-magnitude screens (0.25, 0.35, 0.50)
+  Threshold=0.25: retained 1974/1989
+
+  [Module E_return_screen_0.25] T=1974, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 334 (target ~332)
+[SELECTION] BH-selected: 231 (target ~219)
+[SELECTION] BH+materiality retained: 226 (target ~214)
+[SELECTION] BY+materiality retained: 163 (target ~169)
+    n_obs=1974, descriptive=303, BH+mat=226
+  Threshold=0.35: retained 1983/1989
+
+  [Module E_return_screen_0.35] T=1983, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 320 (target ~332)
+[SELECTION] BH-selected: 225 (target ~219)
+[SELECTION] BH+materiality retained: 217 (target ~214)
+[SELECTION] BY+materiality retained: 154 (target ~169)
+    n_obs=1983, descriptive=293, BH+mat=217
+  Threshold=0.5: retained 1987/1989
+
+  [Module E_return_screen_0.5] T=1987, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 335 (target ~332)
+[SELECTION] BH-selected: 226 (target ~219)
+[SELECTION] BH+materiality retained: 218 (target ~214)
+[SELECTION] BY+materiality retained: 165 (target ~169)
+    n_obs=1987, descriptive=304, BH+mat=218
+
+[EXP6] Module F: Exclude BMPS.MI and TPEIR.AT
+
+  [Module F_excl_bmps_tpeir] T=1989, n=46
+[SELECTION] Order-allowed coefficients: 1035
+[SELECTION] Unadjusted p<0.05: 319 (target ~332)
+[SELECTION] BH-selected: 219 (target ~219)
+[SELECTION] BH+materiality retained: 206 (target ~214)
+[SELECTION] BY+materiality retained: 159 (target ~169)
+    n_obs=1989, descriptive=285, BH+mat=206
+
+[EXP6] Module G: Exclude banks with market cap < EUR 1bn
+  Excluding 4 low-cap banks: ['BST.MI', 'BWB.DE', 'PBB.DE', 'PRO.MI']
+
+  [Module G_excl_lowcap] T=1989, n=44
+[SELECTION] Order-allowed coefficients: 946
+[SELECTION] Unadjusted p<0.05: 283 (target ~332)
+[SELECTION] BH-selected: 211 (target ~219)
+[SELECTION] BH+materiality retained: 204 (target ~214)
+[SELECTION] BY+materiality retained: 148 (target ~169)
+    n_obs=1989, descriptive=260, BH+mat=204
+
+[EXP6] Module H: VAR(1) standardized innovations
+  VAR(1) residuals shape: (1988, 48)
+
+  [Module H_var1_innovations] T=1988, n=48
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 308 (target ~332)
+[SELECTION] BH-selected: 215 (target ~219)
+[SELECTION] BH+materiality retained: 213 (target ~214)
+[SELECTION] BY+materiality retained: 147 (target ~169)
+    n_obs=1988, descriptive=306, BH+mat=213
+
+=== EXP 6: Robustness Summary ===
+              module status  n_obs  n_vars  n_order_allowed  n_descriptive  n_unadj_sig  n_bh_selected  n_bh_materiality  n_by_materiality
+            BASELINE     ok   1989      48             1128            287          312            216               207               154
+        A_unfiltered     ok   1989      48             1128            321          284            192               190               134
+ B_incl2015_screened     ok   2011      48             1128            287          322            225               216               162
+        C_nocalendar     ok   2179      48             1128            310          298            191               189               144
+    D_all_unfiltered     ok   2203      48             1128            342          284            176               172               130
+E_return_screen_0.25     ok   1974      48             1128            303          334            231               226               163
+E_return_screen_0.35     ok   1983      48             1128            293          320            225               217               154
+ E_return_screen_0.5     ok   1987      48             1128            304          335            226               218               165
+   F_excl_bmps_tpeir     ok   1989      46             1035            285          319            219               206               159
+       G_excl_lowcap     ok   1989      44              946            260          283            211               204               148
+  H_var1_innovations     ok   1988      48             1128            306          308            215               213               147
+[OUTPUT] Robustness summary saved to results/exp6_robustness_summary.csv
+[OUTPUT] Full results saved to results/exp6_robustness_full.json
+[OUTPUT] Robustness edge count plot saved to results/exp6_robustness_edgecounts.png
+
+=== EXP 6 COMPLETE ===

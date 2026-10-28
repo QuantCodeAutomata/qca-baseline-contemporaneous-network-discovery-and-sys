@@ -1,0 +1,288 @@
+[
+  {
+    "module": "BASELINE",
+    "status": "ok",
+    "n_obs": 1989,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 287,
+    "n_unadj_sig": 312,
+    "n_bh_selected": 216,
+    "n_bh_materiality": 207,
+    "n_by_materiality": 154,
+    "top5_sis": [
+      "CABK.MC",
+      "MB.MI",
+      "ISP.MI",
+      "CBK.DE",
+      "FBK.MI"
+    ],
+    "top5_svs": [
+      "GLE.PA",
+      "ACA.PA",
+      "BPE.MI",
+      "BNP.PA",
+      "BAMI.MI"
+    ]
+  },
+  {
+    "module": "A_unfiltered",
+    "status": "ok",
+    "n_obs": 1989,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 321,
+    "n_unadj_sig": 284,
+    "n_bh_selected": 192,
+    "n_bh_materiality": 190,
+    "n_by_materiality": 134,
+    "top5_sis": [
+      "BKT.MC",
+      "BNP.PA",
+      "FBK.MI",
+      "ISP.MI",
+      "BIRG.IR"
+    ],
+    "top5_svs": [
+      "BBVA.MC",
+      "GLE.PA",
+      "UCG.MI",
+      "ACA.PA",
+      "CBK.DE"
+    ]
+  },
+  {
+    "module": "B_incl2015_screened",
+    "status": "ok",
+    "n_obs": 2011,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 287,
+    "n_unadj_sig": 322,
+    "n_bh_selected": 225,
+    "n_bh_materiality": 216,
+    "n_by_materiality": 162,
+    "top5_sis": [
+      "CABK.MC",
+      "ISP.MI",
+      "MB.MI",
+      "FBK.MI",
+      "BKT.MC"
+    ],
+    "top5_svs": [
+      "GLE.PA",
+      "ACA.PA",
+      "BNP.PA",
+      "SAN.MC",
+      "UCG.MI"
+    ]
+  },
+  {
+    "module": "C_nocalendar",
+    "status": "ok",
+    "n_obs": 2179,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 310,
+    "n_unadj_sig": 298,
+    "n_bh_selected": 191,
+    "n_bh_materiality": 189,
+    "n_by_materiality": 144,
+    "top5_sis": [
+      "BKT.MC",
+      "FBK.MI",
+      "KBC.BR",
+      "CABK.MC",
+      "BBVA.MC"
+    ],
+    "top5_svs": [
+      "ACA.PA",
+      "GLE.PA",
+      "BAMI.MI",
+      "UCG.MI",
+      "BNP.PA"
+    ]
+  },
+  {
+    "module": "D_all_unfiltered",
+    "status": "ok",
+    "n_obs": 2203,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 342,
+    "n_unadj_sig": 284,
+    "n_bh_selected": 176,
+    "n_bh_materiality": 172,
+    "n_by_materiality": 130,
+    "top5_sis": [
+      "MB.MI",
+      "BKT.MC",
+      "BNP.PA",
+      "BIRG.IR",
+      "SAN.MC"
+    ],
+    "top5_svs": [
+      "UCG.MI",
+      "BBVA.MC",
+      "BAMI.MI",
+      "BPE.MI",
+      "ACA.PA"
+    ]
+  },
+  {
+    "module": "E_return_screen_0.25",
+    "status": "ok",
+    "n_obs": 1974,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 303,
+    "n_unadj_sig": 334,
+    "n_bh_selected": 231,
+    "n_bh_materiality": 226,
+    "n_by_materiality": 163,
+    "top5_sis": [
+      "CABK.MC",
+      "MB.MI",
+      "ISP.MI",
+      "FBK.MI",
+      "BKT.MC"
+    ],
+    "top5_svs": [
+      "GLE.PA",
+      "ACA.PA",
+      "BNP.PA",
+      "UCG.MI",
+      "SAN.MC"
+    ]
+  },
+  {
+    "module": "E_return_screen_0.35",
+    "status": "ok",
+    "n_obs": 1983,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 293,
+    "n_unadj_sig": 320,
+    "n_bh_selected": 225,
+    "n_bh_materiality": 217,
+    "n_by_materiality": 154,
+    "top5_sis": [
+      "SAN.MC",
+      "FBK.MI",
+      "CABK.MC",
+      "ISP.MI",
+      "MB.MI"
+    ],
+    "top5_svs": [
+      "GLE.PA",
+      "ACA.PA",
+      "BNP.PA",
+      "SAB.MC",
+      "BAMI.MI"
+    ]
+  },
+  {
+    "module": "E_return_screen_0.5",
+    "status": "ok",
+    "n_obs": 1987,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 304,
+    "n_unadj_sig": 335,
+    "n_bh_selected": 226,
+    "n_bh_materiality": 218,
+    "n_by_materiality": 165,
+    "top5_sis": [
+      "BKT.MC",
+      "CABK.MC",
+      "MB.MI",
+      "ISP.MI",
+      "BBVA.MC"
+    ],
+    "top5_svs": [
+      "GLE.PA",
+      "ACA.PA",
+      "BNP.PA",
+      "CBK.DE",
+      "SAN.MC"
+    ]
+  },
+  {
+    "module": "F_excl_bmps_tpeir",
+    "status": "ok",
+    "n_obs": 1989,
+    "n_vars": 46,
+    "n_order_allowed": 1035,
+    "n_descriptive": 285,
+    "n_unadj_sig": 319,
+    "n_bh_selected": 219,
+    "n_bh_materiality": 206,
+    "n_by_materiality": 159,
+    "top5_sis": [
+      "CABK.MC",
+      "MB.MI",
+      "ISP.MI",
+      "FBK.MI",
+      "BBVA.MC"
+    ],
+    "top5_svs": [
+      "GLE.PA",
+      "ACA.PA",
+      "BNP.PA",
+      "BAMI.MI",
+      "BPE.MI"
+    ]
+  },
+  {
+    "module": "G_excl_lowcap",
+    "status": "ok",
+    "n_obs": 1989,
+    "n_vars": 44,
+    "n_order_allowed": 946,
+    "n_descriptive": 260,
+    "n_unadj_sig": 283,
+    "n_bh_selected": 211,
+    "n_bh_materiality": 204,
+    "n_by_materiality": 148,
+    "top5_sis": [
+      "CABK.MC",
+      "CBK.DE",
+      "MB.MI",
+      "ISP.MI",
+      "FBK.MI"
+    ],
+    "top5_svs": [
+      "GLE.PA",
+      "ACA.PA",
+      "BNP.PA",
+      "BPE.MI",
+      "BAMI.MI"
+    ]
+  },
+  {
+    "module": "H_var1_innovations",
+    "status": "ok",
+    "n_obs": 1988,
+    "n_vars": 48,
+    "n_order_allowed": 1128,
+    "n_descriptive": 306,
+    "n_unadj_sig": 308,
+    "n_bh_selected": 215,
+    "n_bh_materiality": 213,
+    "n_by_materiality": 147,
+    "top5_sis": [
+      "CABK.MC",
+      "MB.MI",
+      "EBS.VI",
+      "ISP.MI",
+      "BBVA.MC"
+    ],
+    "top5_svs": [
+      "GLE.PA",
+      "ACA.PA",
+      "BNP.PA",
+      "UCG.MI",
+      "SAN.MC"
+    ]
+  }
+]

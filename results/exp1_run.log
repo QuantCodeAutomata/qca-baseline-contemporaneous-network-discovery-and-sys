@@ -1,0 +1,99 @@
+nohup: ignoring input
+2026-10-28 07:04:36,553 [INFO] Downloading 52 tickers from 2015-11-20 to 2025-06-27
+2026-10-28 07:04:37,216 [ERROR] $ALPHA.AT: Data doesn't exist for startDate = 1447970400, endDate = 1750971600
+2026-10-28 07:04:37,694 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SPL.WA"}}}
+2026-10-28 07:04:37,793 [ERROR] $SPL.WA: possibly delisted; no timezone found
+2026-10-28 07:04:37,911 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: BPSO.MI"}}}
+2026-10-28 07:04:38,015 [ERROR] $BPSO.MI: possibly delisted; no timezone found
+2026-10-28 07:04:38,453 [ERROR] $SYDB.CO: possibly delisted; no timezone found
+2026-10-28 07:04:38,566 [ERROR] 
+4 Failed downloads:
+2026-10-28 07:04:38,566 [ERROR] ['ALPHA.AT']: Data doesn't exist for startDate = 1447970400, endDate = 1750971600
+2026-10-28 07:04:38,566 [ERROR] ['SPL.WA', 'BPSO.MI', 'SYDB.CO']: possibly delisted; no timezone found
+2026-10-28 07:04:38,632 [INFO] Saved 2204 x 48 price panel to /workspace/project/data/aligned_prices.parquet
+/workspace/project/src/systemic_scores.py:112: RuntimeWarning: invalid value encountered in divide
+  dampening = np.where(SIS > 0, SIS_minus / SIS, 0.0)
+
+=== EXP 1: Data Preparation ===
+[DATA] Aligned price rows: 2204 (target: 2205)
+[DATA] Raw return intervals: 2203 (target: 2204)
+[DATA] Pre-2016 intervals removed: 24 (target: 24)
+[DATA] Post-2015 intervals removed by calendar screen: 190 (target: 190)
+[DATA] Baseline observations retained: 1989 (target: 1990)
+[DATA] Baseline date range: 2016-01-05 to 2025-06-26
+
+Data verification:
+  Aligned price rows:        2204  (target: 2205)
+  Raw return intervals:       2203  (target: 2204)
+  Pre-2016 removed:          24  (target: 24)
+  Calendar-screen removed:   190  (target: 190)
+  Baseline observations:      1989  (target: 1990)
+  Available tickers:         48 (expected: ≤52)
+  Available bank tickers:    47 (expected: 51)
+  Market proxy available:    True
+
+=== EXP 1: GARCH(1,1)-Student-t Filtering ===
+  Filtered Z_t shape: (1989, 48)  (target: 1990 x 48)
+
+=== EXP 1: Diagnostics ===
+  A5G.IR: ADF p=0.0000, JB p=0.0000, SW p=0.0000
+  ABN.AS: ADF p=0.0000, JB p=0.0000, SW p=0.0000
+  ACA.PA: ADF p=0.0000, JB p=0.0000, SW p=0.0000
+  BAMI.MI: ADF p=0.0000, JB p=0.0000, SW p=0.3102
+  BBVA.MC: ADF p=0.0000, JB p=0.0000, SW p=0.0001
+
+=== EXP 1: VAR Lag Selection ===
+  VAR AIC by lag (subset): {1: np.float64(-1.9284834873159808), 2: np.float64(-1.9180444933984957), 3: np.float64(-1.9072050635832734)}
+  Selected lag (baseline): 0 (paper specification)
+  Baseline lag: p=0 (VAR(0) → reduces to structural contemporaneous model)
+
+=== EXP 1: DirectLiNGAM Estimation ===
+  Variables (d): 48
+  Order-allowed coefficients: 1128  (target: 1326=1326 for full 52)
+  Causal order (first 5): ['EXSA.DE', 'EUROB.AT', 'ETE.AT', 'CABK.MC', 'KOMB.PR']
+
+=== EXP 1: Descriptive Edge Count ===
+  |B0_ij| >= 0.05: 287 edges  (target: ~312)
+
+=== EXP 1: Moving-Block Bootstrap SE (n_boot=200) ===
+  Bootstrap SE computed.
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 312 (target ~332)
+[SELECTION] BH-selected: 216 (target ~219)
+[SELECTION] BH+materiality retained: 207 (target ~214)
+[SELECTION] BY+materiality retained: 154 (target ~169)
+
+  Edge count summary:
+    Unadjusted p<0.05:  312  (target: ~332)
+    BH-selected:        216  (target: ~219)
+    BH+materiality:     207  (target: ~214)
+    BY+materiality:     154  (target: ~169)
+
+=== EXP 1: Bank-Only Total-Effect Matrix ===
+  C^B shape: (47, 47)  (target: 51×51)
+
+=== EXP 1: Systemic Scores ===
+
+Top 5 by SIS (target: BKT.MC ~269.5, FBK.MI ~175.8, CABK.MC ~160.3):
+  CABK.MC: SIS=283.50, rank=1
+  MB.MI: SIS=118.73, rank=2
+  ISP.MI: SIS=105.19, rank=3
+  CBK.DE: SIS=97.48, rank=4
+  FBK.MI: SIS=95.92, rank=5
+
+Top 5 by SVS (target: ACA.PA ~96.4, GLE.PA ~91.1, BNP.PA ~82.7):
+  GLE.PA: SVS=103.17, rank=1
+  ACA.PA: SVS=91.36, rank=2
+  BPE.MI: SVS=80.83, rank=3
+  BNP.PA: SVS=80.51, rank=4
+  BAMI.MI: SVS=76.33, rank=5
+
+Spearman rank corr SIS vs SVS: -0.0456  (target: ~-0.02)
+[OUTPUT] Systemic scores saved to results/exp1_systemic_scores.csv
+
+=== EXP 1: Generating Plots ===
+[OUTPUT] B0 heatmap saved to results/exp1_B0_heatmap.png
+[OUTPUT] Score rankings saved to results/exp1_score_rankings.png
+[OUTPUT] Metadata saved to results/exp1_metadata.json
+
+=== EXP 1 COMPLETE ===

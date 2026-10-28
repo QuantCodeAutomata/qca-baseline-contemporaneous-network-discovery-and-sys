@@ -1,0 +1,26 @@
+{
+  "exp_id": "exp_7",
+  "n_ica_starts": 10,
+  "n_converged_starts": 10,
+  "best_ica_cholesky_dist": 4.647918740830899,
+  "median_ica_cholesky_dist": 4.6560007233553815,
+  "ilmonen_index": 8.634611405896312,
+  "backward_mass_baseline": 0.13267322426493863,
+  "pct_random_orders_le_baseline_bm": 0.3496,
+  "mean_acyclic_bm": 0.8668707286676309,
+  "n_acyclic_sims": 20,
+  "pct_rot_ica_dist_ge_obs": 1.0,
+  "pct_rot_chol_dist_ge_obs": 1.0,
+  "bm_across_starts": [
+    0.017378836037653812,
+    0.06877422913365623,
+    0.7396449126787882,
+    0.13267322426493863,
+    0.8803980507292815,
+    0.9733647151686751,
+    0.01138321384305021,
+    0.04473724325004699,
+    0.8274289647708688,
+    0.9737598146291094
+  ]
+}

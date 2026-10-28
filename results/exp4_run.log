@@ -1,0 +1,51 @@
+2026-10-28 08:13:35,194 [INFO] Loading prices from cache: /workspace/project/data/aligned_prices.parquet
+[DATA] Aligned price rows: 2204 (target: 2205)
+[DATA] Raw return intervals: 2203 (target: 2204)
+[DATA] Pre-2016 intervals removed: 24 (target: 24)
+[DATA] Post-2015 intervals removed by calendar screen: 190 (target: 190)
+[DATA] Baseline observations retained: 1989 (target: 1990)
+[DATA] Baseline date range: 2016-01-05 to 2025-06-26
+
+=== EXP 4: Tail Diagnostics and Holdout Evaluation ===
+  Training: 1267 observations  (target: 1267)
+  Test:     722 observations   (target: 723)
+
+=== EXP 4 Part A: Full-Sample Tail Diagnostics ===
+  Full-sample selected edges: 207
+  Mean CoLift (linked):     7.3526
+  Mean CoLift (non-linked): 5.6818
+  Full-sample forward DirLift:  2.8423
+  Full-sample reverse DirLift:  4.0443
+  Full-sample gap (fwd-rev):    -1.2020
+
+  Running node-label permutation diagnostic (1000 permutations)...
+  Permutation p-value: 0.0010  (smallest possible: 0.00100)
+
+=== EXP 4 Part B: Temporal Holdout ===
+[EXP4] Fitting GARCH on training data...
+[EXP4] Estimating DirectLiNGAM on training data...
+[EXP4] Bootstrap selection on training data (n_boot=200)...
+[SELECTION] Order-allowed coefficients: 1128
+[SELECTION] Unadjusted p<0.05: 245 (target ~332)
+[SELECTION] BH-selected: 156 (target ~219)
+[SELECTION] BH+materiality retained: 156 (target ~214)
+[SELECTION] BY+materiality retained: 101 (target ~169)
+  Training selected edges: 156  (target: ~150)
+[EXP4] Extending GARCH to test period...
+  Holdout symmetric lower-tail lift: 7.9739  (target: ~1.41)
+  Holdout forward DirLift:  4.1561  (target: ~4.39)
+  Holdout reverse DirLift:  4.6400  (target: ~2.37)
+  Holdout gap (fwd-rev):    -0.4839  (target: ~2.02)
+[EXP4] Computing block-bootstrap interval for holdout gap...
+  Bootstrap 90% interval: [-0.8694, -0.1231]  (target: [1.63, 2.56])
+
+[EXP4] Stress-day sensitivity analysis...
+  Excluding >= 10 co-exceedances: gap = -1.2913  (n_sessions = 680)
+  Excluding >= 20 co-exceedances: gap = -1.1145  (n_sessions = 707)
+
+=== EXP 4 Part C: Alternative-Order Comparator (50 orders) ===
+  Alt orders with gap >= DirectLiNGAM gap: 24/50 = 48.0%  (target: ~42.0%)
+[OUTPUT] DirLift comparison saved to results/exp4_dirlift_comparison.png
+[OUTPUT] Metadata saved to results/exp4_metadata.json
+
+=== EXP 4 COMPLETE ===

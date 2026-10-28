@@ -1,0 +1,20 @@
+{
+  "exp_id": "exp_2",
+  "filtered": {
+    "n_pairs": 1128,
+    "n_raw_rej": 196,
+    "n_bh_rej": 15,
+    "n_by_rej": 0,
+    "mean_sq_corr": 0.021201462500609867,
+    "independence_support_bh": false
+  },
+  "unfiltered": {
+    "n_pairs": 1128,
+    "n_raw_rej": 465,
+    "n_bh_rej": 272,
+    "n_by_rej": 0,
+    "mean_sq_corr": 0.04698256140976838,
+    "independence_support_bh": false
+  },
+  "dependence_reduced_by_filtering": true
+}

@@ -1,0 +1,5 @@
+design,n_reps,mean_precision,mean_recall,mean_f1,mean_orientation_acc,mean_tp,mean_fp,estimator
+heterosk-filtered,10,0.9802287581699346,1.0,0.9897647280255976,1.0,12.4,0.3,filtered
+heterosk-unfiltered,10,0.9791035353535353,1.0,0.9891551459293394,1.0,13.8,0.3,unfiltered
+homoskedastic-laplace,10,0.9923076923076923,1.0,0.9960000000000001,1.0,13.7,0.1,unfiltered
+homoskedastic-t,10,0.9634480431848853,0.9923076923076923,0.9771411527704433,1.0,12.7,0.5,unfiltered

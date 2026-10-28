@@ -1,0 +1,18 @@
+{
+  "exp_id": "exp_5",
+  "n_banks": 47,
+  "raw_sis_dy": 0.4020595373691432,
+  "raw_svs_dyfrom": 0.7539315448658649,
+  "raw_sis_mes": 0.12460953143786105,
+  "raw_svs_mes": 0.44403330249768735,
+  "size_sis_dy": 0.21847309049491598,
+  "size_svs_dyfrom": 0.6884584479473044,
+  "size_sis_mes": -0.020453402498758693,
+  "size_svs_mes": 0.3099449499667712,
+  "size_pc1_sis_dy": -0.07527045004620361,
+  "size_pc1_svs_dyfrom": 0.10945910533895797,
+  "size_pc1_sis_mes": -0.08679849335521662,
+  "size_pc1_svs_mes": 0.18654939511145396,
+  "svs_stronger_than_sis_raw_dy": true,
+  "svs_stronger_than_sis_raw_mes": true
+}

@@ -1,0 +1,18 @@
+{
+  "exp_id": "exp_4",
+  "T_train": 1267,
+  "T_test": 722,
+  "n_train_selected_edges": 156,
+  "full_sample_mean_fwd_dirlift": 2.842252173913043,
+  "full_sample_mean_rev_dirlift": 4.044300000000001,
+  "holdout_symmetric_colift": 7.9738560666354115,
+  "holdout_fwd_dirlift": 4.156139663703489,
+  "holdout_rev_dirlift": 4.640035574198147,
+  "holdout_gap": -0.48389591049465785,
+  "holdout_boot_lo": -0.8693572375536778,
+  "holdout_boot_hi": -0.12307680527397388,
+  "alt_order_frac_as_large": 0.48,
+  "n_alt_orders": 50,
+  "n_alt_valid_gaps": 50,
+  "perm_pvalue": 0.000999000999000999
+}

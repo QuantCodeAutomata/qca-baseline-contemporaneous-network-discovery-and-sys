@@ -1,0 +1,56 @@
+nohup: ignoring input
+
+=== EXP 8: Simulation Study ===
+  N_REPS=10, BURN_IN=500, GLOBAL_SEED=1121
+
+[EXP8] Running Monte Carlo simulation study...
+
+  homoskedastic-laplace:
+    mean_precision: 0.9923
+    mean_recall: 1.0000
+    mean_f1: 0.9960
+    mean_orientation_acc: 1.0000
+    mean_tp: 13.7000
+    mean_fp: 0.1000
+
+  homoskedastic-t:
+    mean_precision: 0.9634
+    mean_recall: 0.9923
+    mean_f1: 0.9771
+    mean_orientation_acc: 1.0000
+    mean_tp: 12.7000
+    mean_fp: 0.5000
+
+  heterosk-unfiltered:
+    mean_precision: 0.9791
+    mean_recall: 1.0000
+    mean_f1: 0.9892
+    mean_orientation_acc: 1.0000
+    mean_tp: 13.8000
+    mean_fp: 0.3000
+
+  heterosk-filtered:
+    mean_precision: 0.9802
+    mean_recall: 1.0000
+    mean_f1: 0.9898
+    mean_orientation_acc: 1.0000
+    mean_tp: 12.4000
+    mean_fp: 0.3000
+
+=== EXP 8: Simulation Summary Table ===
+               design  n_reps  mean_precision  mean_recall  mean_f1  mean_orientation_acc  mean_tp  mean_fp  estimator
+    heterosk-filtered      10          0.9802       1.0000   0.9898                1.0000  12.4000   0.3000   filtered
+  heterosk-unfiltered      10          0.9791       1.0000   0.9892                1.0000  13.8000   0.3000 unfiltered
+homoskedastic-laplace      10          0.9923       1.0000   0.9960                1.0000  13.7000   0.1000 unfiltered
+      homoskedastic-t      10          0.9634       0.9923   0.9771                1.0000  12.7000   0.5000 unfiltered
+[OUTPUT] Summary table saved to results/exp8_simulation_summary.csv
+
+=== EXP 8: Filtering Effect Analysis ===
+  heterosk-filtered vs heterosk-unfiltered:
+    F1 unfiltered: 0.9892   F1 filtered: 0.9898
+    Filtering improves F1: True
+[OUTPUT] Simulation F1 bar chart saved to results/exp8_simulation_f1.png
+[OUTPUT] Simulation boxplots saved to results/exp8_simulation_boxplots.png
+[OUTPUT] Metadata saved to results/exp8_metadata.json
+
+=== EXP 8 COMPLETE ===
